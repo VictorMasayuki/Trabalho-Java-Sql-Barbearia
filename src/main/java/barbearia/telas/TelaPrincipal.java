@@ -42,8 +42,8 @@ public class TelaPrincipal extends javax.swing.JFrame {
         cadastrousuario = new javax.swing.JMenuItem();
         cadastrorecepcao = new javax.swing.JMenuItem();
         menuagendar = new javax.swing.JMenu();
-        agendahora = new javax.swing.JMenuItem();
-        jMenuItem1 = new javax.swing.JMenuItem();
+        agendaservico = new javax.swing.JMenuItem();
+        agendacorte = new javax.swing.JMenuItem();
         menuvenda = new javax.swing.JMenu();
         vendaprodutos = new javax.swing.JMenuItem();
         MenuAjuda = new javax.swing.JMenu();
@@ -125,21 +125,21 @@ public class TelaPrincipal extends javax.swing.JFrame {
 
         menuagendar.setText("Agendamento");
 
-        agendahora.setText("Serviço");
-        agendahora.addActionListener(new java.awt.event.ActionListener() {
+        agendaservico.setText("Serviço");
+        agendaservico.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                agendahoraActionPerformed(evt);
+                agendaservicoActionPerformed(evt);
             }
         });
-        menuagendar.add(agendahora);
+        menuagendar.add(agendaservico);
 
-        jMenuItem1.setText("Agendar Corte");
-        jMenuItem1.addActionListener(new java.awt.event.ActionListener() {
+        agendacorte.setText("Agendar Corte");
+        agendacorte.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jMenuItem1ActionPerformed(evt);
+                agendacorteActionPerformed(evt);
             }
         });
-        menuagendar.add(jMenuItem1);
+        menuagendar.add(agendacorte);
 
         menu.add(menuagendar);
 
@@ -285,19 +285,19 @@ public class TelaPrincipal extends javax.swing.JFrame {
         desktop.add(usu);
     }//GEN-LAST:event_cadastrousuarioActionPerformed
 
-    private void agendahoraActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_agendahoraActionPerformed
+    private void agendaservicoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_agendaservicoActionPerformed
         // Chama a TelaServicos
         TelaServicos servico = new TelaServicos();
         servico.setVisible(true);
         desktop.add(servico);
-    }//GEN-LAST:event_agendahoraActionPerformed
+    }//GEN-LAST:event_agendaservicoActionPerformed
 
-    private void jMenuItem1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem1ActionPerformed
+    private void agendacorteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_agendacorteActionPerformed
         // Chama a TelaAgendamento
         TelaAgendamento agendamento = new TelaAgendamento();
         agendamento.setVisible(true);
         desktop.add(agendamento);
-    }//GEN-LAST:event_jMenuItem1ActionPerformed
+    }//GEN-LAST:event_agendacorteActionPerformed
 
     /**
      * @param args the command line arguments
@@ -336,13 +336,13 @@ public class TelaPrincipal extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JMenu MenuAjuda;
-    private javax.swing.JMenuItem agendahora;
+    private javax.swing.JMenuItem agendacorte;
+    private javax.swing.JMenuItem agendaservico;
     public static javax.swing.JMenuItem cadastrocliente;
     public static javax.swing.JMenuItem cadastrorecepcao;
     public static javax.swing.JMenuItem cadastrousuario;
     private javax.swing.JDesktopPane desktop;
     private javax.swing.JLabel jLabel1;
-    private javax.swing.JMenuItem jMenuItem1;
     private javax.swing.JLabel lblDataNome;
     public static javax.swing.JLabel lblUsuarioNome;
     private javax.swing.JLabel lbldata;

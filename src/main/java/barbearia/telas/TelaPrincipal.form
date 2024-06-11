@@ -59,20 +59,20 @@
             <Property name="text" type="java.lang.String" value="Agendamento"/>
           </Properties>
           <SubComponents>
-            <MenuItem class="javax.swing.JMenuItem" name="agendahora">
+            <MenuItem class="javax.swing.JMenuItem" name="agendaservico">
               <Properties>
                 <Property name="text" type="java.lang.String" value="Servi&#xe7;o"/>
               </Properties>
               <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="agendahoraActionPerformed"/>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="agendaservicoActionPerformed"/>
               </Events>
             </MenuItem>
-            <MenuItem class="javax.swing.JMenuItem" name="jMenuItem1">
+            <MenuItem class="javax.swing.JMenuItem" name="agendacorte">
               <Properties>
                 <Property name="text" type="java.lang.String" value="Agendar Corte"/>
               </Properties>
               <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jMenuItem1ActionPerformed"/>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="agendacorteActionPerformed"/>
               </Events>
             </MenuItem>
           </SubComponents>

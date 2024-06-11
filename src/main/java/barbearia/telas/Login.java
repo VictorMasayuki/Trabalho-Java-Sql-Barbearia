@@ -46,7 +46,8 @@ ResultSet rs = null;
                 this.dispose();
                 }
                 
-                else 
+                else
+                    
                 if(perfil.equals("recepcao")){
                 TelaPrincipal principal = new TelaPrincipal();
                 principal.setVisible(true);
@@ -59,7 +60,8 @@ ResultSet rs = null;
                 TelaPrincipal.lblusuario.setForeground(Color.RED);
                 this.dispose();
                 }
-                else{
+                else
+                {
                     TelaPrincipal principal = new TelaPrincipal();
                     principal.setVisible(true);
                     TelaPrincipal.lblusuario.setText(rs.getString(2));

@@ -56,7 +56,7 @@ public class TelaAgendamento extends javax.swing.JInternalFrame {
             pst = conexao.prepareStatement(sql);
             // Implementação da data
             SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
-            String data =sdf.format(TelaAgendamentoData.getDate());
+            String data = sdf.format(TelaAgendamentoData.getDate());
             pst.setString(1, tipo);
             //rs=pst.executeQuery();
             pst.setString(2, data);    
@@ -64,7 +64,7 @@ public class TelaAgendamento extends javax.swing.JInternalFrame {
             pst.setString(4, txtTelaAgendamentoId.getText());
             
             //Validação dos campos
-            if (tipo.isEmpty() || TelaAgendamentoData == null || txtTelaAgendamentoId.getText().isEmpty()) {
+            if (tipo.isEmpty() || TelaAgendamentoData == null || txtTelaAgendamentoId.getText().isEmpty() || cboxHoraAgendamento.getSelectedItem().toString().isEmpty()) {
                 JOptionPane.showMessageDialog(null, "Preencha os campos obrigatórios");
             } else {
                     int adicionado =pst.executeUpdate();
@@ -194,7 +194,15 @@ public class TelaAgendamento extends javax.swing.JInternalFrame {
             new String [] {
                 "Id", "Nome", "Telefone"
             }
-        ));
+        ) {
+            boolean[] canEdit = new boolean [] {
+                false, false, false
+            };
+
+            public boolean isCellEditable(int rowIndex, int columnIndex) {
+                return canEdit [columnIndex];
+            }
+        });
         tblAgendamentos.getTableHeader().setResizingAllowed(false);
         tblAgendamentos.getTableHeader().setReorderingAllowed(false);
         tblAgendamentos.addMouseListener(new java.awt.event.MouseAdapter() {
