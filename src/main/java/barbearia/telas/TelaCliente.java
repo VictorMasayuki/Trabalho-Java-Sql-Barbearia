@@ -160,7 +160,7 @@ public class TelaCliente extends javax.swing.JInternalFrame {
         setClosable(true);
         setIconifiable(true);
         setMaximizable(true);
-        setTitle("Tela Cliente");
+        setTitle("Cliente");
         setPreferredSize(new java.awt.Dimension(837, 509));
 
         telausuarioid.setFont(new java.awt.Font("Arial", 0, 18)); // NOI18N

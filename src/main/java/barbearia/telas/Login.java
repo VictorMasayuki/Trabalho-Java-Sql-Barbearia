@@ -40,34 +40,43 @@ ResultSet rs = null;
                 TelaPrincipal.menuvenda.setEnabled(true);
                 TelaPrincipal.cadastrocliente.setEnabled(true);
                 TelaPrincipal.cadastrousuario.setEnabled(true);
-                TelaPrincipal.cadastrorecepcao.setEnabled(true);
                 TelaPrincipal.lblusuario.setText(rs.getString(2));
                 TelaPrincipal.lblusuario.setForeground(Color.BLUE);
                 this.dispose();
                 }
                 
-                else
-                    
+                else 
                 if(perfil.equals("recepcao")){
                 TelaPrincipal principal = new TelaPrincipal();
                 principal.setVisible(true);
                 TelaPrincipal.menucadastro.setEnabled(true);
                 TelaPrincipal.menuvenda.setEnabled(true);
                 TelaPrincipal.cadastrocliente.setEnabled(true);
-                //TelaPrincipal.cadastrousuario.setEnabled(true);
-                //TelaPrincipal.cadastrorecepcao.setEnabled(true);
                 TelaPrincipal.lblusuario.setText(rs.getString(2));
                 TelaPrincipal.lblusuario.setForeground(Color.RED);
                 this.dispose();
                 }
+                
                 else
-                {
+                if(perfil.equals("cliente")){
+                TelaPrincipal principal = new TelaPrincipal();
+                principal.setVisible(true);
+                TelaPrincipal.menucadastro.setEnabled(true);
+                TelaPrincipal.cadastrocliente.setEnabled(true);
+                TelaPrincipal.menuvenda.setEnabled(true);
+                TelaPrincipal.vendagerenciamento.setEnabled(true);
+                TelaPrincipal.agendaservico.setEnabled(false);
+                TelaPrincipal.lblusuario.setText(rs.getString(2));
+                TelaPrincipal.lblusuario.setForeground(Color.BLACK);
+                this.dispose();
+                }
+                
+                else{
                     TelaPrincipal principal = new TelaPrincipal();
                     principal.setVisible(true);
                     TelaPrincipal.lblusuario.setText(rs.getString(2));
                     this.dispose();
                 }
-                
             }else{
                 JOptionPane.showMessageDialog(null, "senha e/ou usuário inválido(s)");
             }

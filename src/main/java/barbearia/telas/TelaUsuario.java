@@ -59,19 +59,19 @@ public class TelaUsuario extends javax.swing.JInternalFrame {
                 pst = conexao.prepareStatement(sql);
                 pst.setString(1, txttelausuariopesquisa.getText() + '%');
                 rs=pst.executeQuery();
-                tabelausuarios.setModel(DbUtils.resultSetToTableModel(rs));
+                tblUsuarios.setModel(DbUtils.resultSetToTableModel(rs));
             } catch (Exception e) {
         }  
     }
     
         //Set campos
         private void set_campos(){
-            int setar = tabelausuarios.getSelectedRow();
-            txttelausuarioid.setText(tabelausuarios.getModel().getValueAt(setar,0).toString());
-            txttelausuarionome.setText(tabelausuarios.getModel().getValueAt(setar,1).toString());
-            txttelausuariotelefone.setText(tabelausuarios.getModel().getValueAt(setar,2).toString());
-            txttelausuarioemail.setText(tabelausuarios.getModel().getValueAt(setar,3).toString());
-            txttelausuarioendereco.setText(tabelausuarios.getModel().getValueAt(setar,4).toString());
+            int setar = tblUsuarios.getSelectedRow();
+            txttelausuarioid.setText(tblUsuarios.getModel().getValueAt(setar,0).toString());
+            txttelausuarionome.setText(tblUsuarios.getModel().getValueAt(setar,1).toString());
+            txttelausuariotelefone.setText(tblUsuarios.getModel().getValueAt(setar,2).toString());
+            txttelausuarioemail.setText(tblUsuarios.getModel().getValueAt(setar,3).toString());
+            txttelausuarioendereco.setText(tblUsuarios.getModel().getValueAt(setar,4).toString());
             btnusuariocreate.setEnabled(false);
         }
         
@@ -130,7 +130,7 @@ public class TelaUsuario extends javax.swing.JInternalFrame {
             txttelausuariotelefone.setText(null);
             txttelausuarioemail.setText(null);
             txttelausuarioendereco.setText(null);
-            ((DefaultTableModel) tabelausuarios.getModel()).setRowCount(0);
+            ((DefaultTableModel) tblUsuarios.getModel()).setRowCount(0);
         }
 
     /**
@@ -156,14 +156,14 @@ public class TelaUsuario extends javax.swing.JInternalFrame {
         txttelausuariopesquisa = new javax.swing.JTextField();
         jLabel1 = new javax.swing.JLabel();
         jScrollPane1 = new javax.swing.JScrollPane();
-        tabelausuarios = new javax.swing.JTable();
+        tblUsuarios = new javax.swing.JTable();
         txttelausuarioid = new javax.swing.JTextField();
         telausuarioid = new javax.swing.JLabel();
 
         setClosable(true);
         setIconifiable(true);
         setMaximizable(true);
-        setTitle("Tela Usuário");
+        setTitle("Usuário");
 
         telausuarionome.setFont(new java.awt.Font("Arial", 0, 18)); // NOI18N
         telausuarionome.setText("nome:");
@@ -246,12 +246,12 @@ public class TelaUsuario extends javax.swing.JInternalFrame {
         jLabel1.setIcon(new javax.swing.ImageIcon("C:\\Users\\victo\\Downloads\\NetBeans\\Icones\\icone pesquisar.png")); // NOI18N
         jLabel1.setText("jLabel1");
 
-        tabelausuarios = new javax.swing.JTable(){
+        tblUsuarios = new javax.swing.JTable(){
             public boolean isCellEditable(int rowIndex, int colIndex){
                 return false;
             }
         };
-        tabelausuarios.setModel(new javax.swing.table.DefaultTableModel(
+        tblUsuarios.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null, null, null, null, null},
                 {null, null, null, null, null},
@@ -270,20 +270,20 @@ public class TelaUsuario extends javax.swing.JInternalFrame {
                 return canEdit [columnIndex];
             }
         });
-        tabelausuarios.setFocusable(false);
-        tabelausuarios.getTableHeader().setResizingAllowed(false);
-        tabelausuarios.getTableHeader().setReorderingAllowed(false);
-        tabelausuarios.addMouseListener(new java.awt.event.MouseAdapter() {
+        tblUsuarios.setFocusable(false);
+        tblUsuarios.getTableHeader().setResizingAllowed(false);
+        tblUsuarios.getTableHeader().setReorderingAllowed(false);
+        tblUsuarios.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                tabelausuariosMouseClicked(evt);
+                tblUsuariosMouseClicked(evt);
             }
         });
-        tabelausuarios.addKeyListener(new java.awt.event.KeyAdapter() {
+        tblUsuarios.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyReleased(java.awt.event.KeyEvent evt) {
-                tabelausuariosKeyReleased(evt);
+                tblUsuariosKeyReleased(evt);
             }
         });
-        jScrollPane1.setViewportView(tabelausuarios);
+        jScrollPane1.setViewportView(tblUsuarios);
 
         txttelausuarioid.setBackground(new java.awt.Color(60, 63, 65));
         txttelausuarioid.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
@@ -409,15 +409,15 @@ public class TelaUsuario extends javax.swing.JInternalFrame {
         filtrar();
     }//GEN-LAST:event_txttelausuariopesquisaKeyReleased
 
-    private void tabelausuariosKeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_tabelausuariosKeyReleased
+    private void tblUsuariosKeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_tblUsuariosKeyReleased
         // TODO add your handling code here:
         
-    }//GEN-LAST:event_tabelausuariosKeyReleased
+    }//GEN-LAST:event_tblUsuariosKeyReleased
 
-    private void tabelausuariosMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_tabelausuariosMouseClicked
+    private void tblUsuariosMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_tblUsuariosMouseClicked
         // Setar campos
         set_campos();
-    }//GEN-LAST:event_tabelausuariosMouseClicked
+    }//GEN-LAST:event_tblUsuariosMouseClicked
 
     private void btnusuarioupdateActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnusuarioupdateActionPerformed
         // Update usuarios
@@ -436,7 +436,7 @@ public class TelaUsuario extends javax.swing.JInternalFrame {
     private javax.swing.JButton btnusuarioupdate;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JScrollPane jScrollPane1;
-    private javax.swing.JTable tabelausuarios;
+    private javax.swing.JTable tblUsuarios;
     private javax.swing.JLabel telausuarioemail;
     private javax.swing.JLabel telausuarioendereco;
     private javax.swing.JLabel telausuarioid;

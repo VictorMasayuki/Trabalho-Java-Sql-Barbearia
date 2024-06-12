@@ -40,11 +40,11 @@ public class TelaPrincipal extends javax.swing.JFrame {
         menucadastro = new javax.swing.JMenu();
         cadastrocliente = new javax.swing.JMenuItem();
         cadastrousuario = new javax.swing.JMenuItem();
-        cadastrorecepcao = new javax.swing.JMenuItem();
         menuagendar = new javax.swing.JMenu();
         agendaservico = new javax.swing.JMenuItem();
         agendacorte = new javax.swing.JMenuItem();
         menuvenda = new javax.swing.JMenu();
+        vendagerenciamento = new javax.swing.JMenuItem();
         vendaprodutos = new javax.swing.JMenuItem();
         MenuAjuda = new javax.swing.JMenu();
         menusobre = new javax.swing.JMenuItem();
@@ -112,15 +112,6 @@ public class TelaPrincipal extends javax.swing.JFrame {
         });
         menucadastro.add(cadastrousuario);
 
-        cadastrorecepcao.setText("Recepção");
-        cadastrorecepcao.setEnabled(false);
-        cadastrorecepcao.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                cadastrorecepcaoActionPerformed(evt);
-            }
-        });
-        menucadastro.add(cadastrorecepcao);
-
         menu.add(menucadastro);
 
         menuagendar.setText("Agendamento");
@@ -145,6 +136,14 @@ public class TelaPrincipal extends javax.swing.JFrame {
 
         menuvenda.setText("Venda");
         menuvenda.setEnabled(false);
+
+        vendagerenciamento.setText("Gerenciamento");
+        vendagerenciamento.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                vendagerenciamentoActionPerformed(evt);
+            }
+        });
+        menuvenda.add(vendagerenciamento);
 
         vendaprodutos.setText("Produtos");
         vendaprodutos.addActionListener(new java.awt.event.ActionListener() {
@@ -234,13 +233,12 @@ public class TelaPrincipal extends javax.swing.JFrame {
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
-    private void vendaprodutosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_vendaprodutosActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_vendaprodutosActionPerformed
-
-    private void cadastrorecepcaoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cadastrorecepcaoActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_cadastrorecepcaoActionPerformed
+    private void vendagerenciamentoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_vendagerenciamentoActionPerformed
+        // Chama o GerenciamentoProdutos
+        TelaGerenciamentoProdutos vendaprod = new TelaGerenciamentoProdutos();
+        vendaprod.setVisible(true);
+        desktop.add(vendaprod);
+    }//GEN-LAST:event_vendagerenciamentoActionPerformed
 
     private void formWindowActivated(java.awt.event.WindowEvent evt) {//GEN-FIRST:event_formWindowActivated
         // substitui a label lbldata para a data atual do sistema
@@ -299,6 +297,13 @@ public class TelaPrincipal extends javax.swing.JFrame {
         desktop.add(agendamento);
     }//GEN-LAST:event_agendacorteActionPerformed
 
+    private void vendaprodutosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_vendaprodutosActionPerformed
+        // Chama a TelaVendaProdutos
+        TelaClienteVenda clivenda = new TelaClienteVenda();
+        clivenda.setVisible(true);
+        desktop.add(clivenda);
+    }//GEN-LAST:event_vendaprodutosActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -337,9 +342,8 @@ public class TelaPrincipal extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JMenu MenuAjuda;
     private javax.swing.JMenuItem agendacorte;
-    private javax.swing.JMenuItem agendaservico;
+    public static javax.swing.JMenuItem agendaservico;
     public static javax.swing.JMenuItem cadastrocliente;
-    public static javax.swing.JMenuItem cadastrorecepcao;
     public static javax.swing.JMenuItem cadastrousuario;
     private javax.swing.JDesktopPane desktop;
     private javax.swing.JLabel jLabel1;
@@ -354,6 +358,7 @@ public class TelaPrincipal extends javax.swing.JFrame {
     private javax.swing.JMenuItem menusobre;
     public static javax.swing.JMenu menuvenda;
     private javax.swing.JMenuItem opcoessair;
+    public static javax.swing.JMenuItem vendagerenciamento;
     private javax.swing.JMenuItem vendaprodutos;
     // End of variables declaration//GEN-END:variables
 }
