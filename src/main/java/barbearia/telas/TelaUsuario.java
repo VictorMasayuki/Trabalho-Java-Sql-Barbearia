@@ -55,7 +55,7 @@ public class TelaUsuario extends javax.swing.JInternalFrame {
         //Filtro de pesquisa para usuários
         private void filtrar(){
         String sql = "select idcadastro as Id, nomecadastro as Nome, telefonecadastro as Telefone, email as Email, endereco as Endereço from cadastro where nomecadastro like ?";
-            try {
+            try {rs=pst.executeQuery();
                 pst = conexao.prepareStatement(sql);
                 pst.setString(1, txttelausuariopesquisa.getText() + '%');
                 rs=pst.executeQuery();

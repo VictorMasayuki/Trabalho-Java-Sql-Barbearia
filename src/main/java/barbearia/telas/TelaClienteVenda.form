@@ -34,36 +34,44 @@
                       <Component id="txtCliVendaProdPesquisa" min="-2" pref="170" max="-2" attributes="0"/>
                       <EmptySpace type="separate" max="-2" attributes="0"/>
                       <Component id="jLabel1" min="-2" pref="34" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="24" max="-2" attributes="0"/>
+                      <Component id="telausuarioid" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                      <Component id="txtCliVendaProdId" min="-2" pref="95" max="-2" attributes="0"/>
                   </Group>
                   <Component id="jScrollPane1" alignment="0" min="-2" pref="750" max="-2" attributes="0"/>
+                  <Group type="102" alignment="1" attributes="0">
+                      <Group type="103" groupAlignment="1" attributes="0">
+                          <Component id="telausuarionome5" min="-2" max="-2" attributes="0"/>
+                          <Component id="telausuarionome3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                          <Component id="txtCliVendaProdQtdeDesejada" min="-2" pref="80" max="-2" attributes="0"/>
+                          <Component id="txtCliVendaProdValTotal" max="32767" attributes="0"/>
+                      </Group>
+                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                          <Component id="btnCliVendaProdCalcular" max="32767" attributes="0"/>
+                          <Component id="btnCliVendaProdCompra" max="32767" attributes="0"/>
+                      </Group>
+                      <EmptySpace min="-2" pref="360" max="-2" attributes="0"/>
+                  </Group>
                   <Group type="102" alignment="0" attributes="0">
                       <Group type="103" groupAlignment="1" attributes="0">
                           <Component id="telausuarionome" alignment="1" min="-2" max="-2" attributes="0"/>
-                          <Group type="103" alignment="1" groupAlignment="0" attributes="0">
-                              <Component id="telausuarionome4" min="-2" max="-2" attributes="0"/>
-                              <Component id="telausuarionome2" min="-2" pref="51" max="-2" attributes="0"/>
-                          </Group>
+                          <Component id="telausuarionome2" alignment="1" min="-2" pref="51" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="0" attributes="0">
-                          <Group type="102" alignment="0" attributes="0">
-                              <Component id="txtCliVendaProdNome" min="-2" pref="220" max="-2" attributes="0"/>
-                              <EmptySpace min="-2" pref="299" max="-2" attributes="0"/>
-                              <Component id="telausuarioid" min="-2" max="-2" attributes="0"/>
-                              <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                              <Component id="txtCliVendaProdId" min="-2" pref="95" max="-2" attributes="0"/>
-                          </Group>
-                          <Component id="txtCliVendaProdValor" alignment="0" min="-2" pref="100" max="-2" attributes="0"/>
-                          <Component id="txtCliVendaProdQtde" alignment="0" min="-2" pref="80" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                          <Component id="txtCliVendaProdNome" pref="220" max="32767" attributes="0"/>
+                          <Component id="txtCliVendaProdValor" max="32767" attributes="0"/>
                       </Group>
-                  </Group>
-                  <Group type="102" alignment="1" attributes="0">
-                      <Component id="telausuarionome3" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace max="-2" attributes="0"/>
-                      <Component id="txtCliVendaProdQtdeDesejada" min="-2" pref="80" max="-2" attributes="0"/>
-                      <EmptySpace type="separate" max="-2" attributes="0"/>
-                      <Component id="btnCliVendaProdCompra" min="-2" pref="365" max="-2" attributes="0"/>
-                      <EmptySpace min="-2" pref="101" max="-2" attributes="0"/>
+                      <EmptySpace max="32767" attributes="0"/>
+                      <Component id="telausuarionome4" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                      <Component id="txtCliVendaProdQtde" min="-2" pref="89" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="60" max="-2" attributes="0"/>
                   </Group>
               </Group>
               <EmptySpace pref="42" max="32767" attributes="0"/>
@@ -77,42 +85,36 @@
               <Group type="103" groupAlignment="3" attributes="0">
                   <Component id="jLabel1" alignment="3" min="-2" pref="42" max="-2" attributes="0"/>
                   <Component id="txtCliVendaProdPesquisa" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="txtCliVendaProdId" alignment="3" min="-2" pref="26" max="-2" attributes="0"/>
+                  <Component id="telausuarioid" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace type="separate" max="-2" attributes="0"/>
               <Component id="jScrollPane1" min="-2" pref="130" max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="0" attributes="0">
-                  <Group type="102" attributes="0">
-                      <EmptySpace type="separate" max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="txtCliVendaProdId" alignment="3" min="-2" pref="26" max="-2" attributes="0"/>
-                          <Component id="telausuarioid" alignment="3" min="-2" max="-2" attributes="0"/>
-                      </Group>
-                  </Group>
-                  <Group type="102" alignment="0" attributes="0">
-                      <EmptySpace min="-2" pref="27" max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="txtCliVendaProdNome" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="telausuarionome" alignment="3" min="-2" max="-2" attributes="0"/>
-                      </Group>
-                      <EmptySpace type="separate" max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="txtCliVendaProdValor" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="telausuarionome2" alignment="3" min="-2" max="-2" attributes="0"/>
-                      </Group>
-                  </Group>
-              </Group>
-              <EmptySpace type="separate" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="27" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="txtCliVendaProdNome" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="telausuarionome" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="telausuarionome4" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="txtCliVendaProdQtde" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
-              <EmptySpace pref="36" max="32767" attributes="0"/>
+              <EmptySpace type="separate" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="btnCliVendaProdCompra" alignment="3" min="-2" pref="50" max="-2" attributes="0"/>
-                  <Component id="txtCliVendaProdQtdeDesejada" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="telausuarionome3" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="txtCliVendaProdValor" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="telausuarionome2" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
-              <EmptySpace min="-2" pref="50" max="-2" attributes="0"/>
+              <EmptySpace pref="62" max="32767" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="telausuarionome3" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="txtCliVendaProdQtdeDesejada" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="btnCliVendaProdCalcular" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace type="separate" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="btnCliVendaProdCompra" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="txtCliVendaProdValTotal" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="telausuarionome5" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace min="-2" pref="40" max="-2" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -202,6 +204,7 @@
     </Component>
     <Component class="javax.swing.JTextField" name="txtCliVendaProdNome">
       <Properties>
+        <Property name="editable" type="boolean" value="false"/>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Segoe UI" size="14" style="0"/>
         </Property>
@@ -220,6 +223,7 @@
     </Component>
     <Component class="javax.swing.JTextField" name="txtCliVendaProdValor">
       <Properties>
+        <Property name="editable" type="boolean" value="false"/>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Segoe UI" size="14" style="0"/>
         </Property>
@@ -251,17 +255,47 @@
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Arial" size="18" style="0"/>
         </Property>
-        <Property name="text" type="java.lang.String" value="Qtde:"/>
+        <Property name="text" type="java.lang.String" value="Quantidade dispon&#xed;vel:"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JTextField" name="txtCliVendaProdQtde">
       <Properties>
+        <Property name="editable" type="boolean" value="false"/>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Segoe UI" size="14" style="0"/>
         </Property>
       </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txtCliVendaProdQtdeActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JLabel" name="telausuarionome5">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Arial" size="18" style="0"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="Valor Total:"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JTextField" name="txtCliVendaProdValTotal">
+      <Properties>
+        <Property name="editable" type="boolean" value="false"/>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Segoe UI" size="14" style="0"/>
+        </Property>
+        <Property name="focusable" type="boolean" value="false"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JButton" name="btnCliVendaProdCalcular">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Calcular pre&#xe7;o"/>
+        <Property name="toolTipText" type="java.lang.String" value="Alterar"/>
+        <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
+          <Color id="Hand Cursor"/>
+        </Property>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnCliVendaProdCalcularActionPerformed"/>
       </Events>
     </Component>
   </SubComponents>
